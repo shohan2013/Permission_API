@@ -1,0 +1,6 @@
+@Permission.UI_HostAddress = http://localhost:5285
+
+GET {{Permission.UI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

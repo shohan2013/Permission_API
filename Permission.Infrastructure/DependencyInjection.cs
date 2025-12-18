@@ -16,7 +16,7 @@ namespace Permission.Infrastructure
         public static IServiceCollection AddInfrastructureDI(this IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options => {
-                options.UseSqlServer("Data Source=10.35.117.135;Initial Catalog=MENUTEST;Persist Security Info=True;User ID=sohan.corpone;Password=Test@1234;Trust Server Certificate=True");
+                options.UseSqlServer("Your Connection String");
             });
 
             services.AddScoped<IEmplolyeeRepository,EmployeeRepository>();

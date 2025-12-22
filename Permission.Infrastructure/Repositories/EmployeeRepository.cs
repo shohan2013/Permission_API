@@ -19,7 +19,7 @@ namespace Permission.Infrastructure.Repositories
 
         public async Task<TBLEmployeeEntity> AddData(TBLEmployeeEntity entity)
         {
-            dbContext.TBLEmployeeEntity.Add(entity);
+            await dbContext.TBLEmployeeEntity.AddAsync(entity);
             await dbContext.SaveChangesAsync();
             return entity;
         }

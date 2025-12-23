@@ -20,6 +20,7 @@ namespace Permission.Api.Controllers.MasterDetails
         }
 
 
+
         [HttpGet]
         public async Task<IActionResult> Get()
         {
